@@ -41,3 +41,28 @@ data.loc[data['Recuperado'] == 'fallecido'] = 'Fallecido'
 
 #print(data.columns)
 
+# Busqueda 1 número de casos de contagios en el país
+#contagiosTotales = data.shape[0]
+#print(f"El número de casos totales de COVID-19 son: {contagiosTotales}")
+
+# Busqueda 2 número de municipios afectados
+#NumeroMunicipiosAfectados = len(data['Nombre municipio'].value_counts())
+#print(f"El número de municipios afectados es de: {NumeroMunicipiosAfectados}")
+
+#  Busqueda 3 lista de los municipios afectados
+#municipiosAfectados = set(data['Nombre municipio'])
+#print(municipiosAfectados)
+
+#  Busqueda 4 número de personas que se encuentran en atención en casa
+#atencionEnCasa = len(data.loc[data['Ubicación del caso'] == 'Casa'])
+#print(f"El número de personas que están siendo atendida en su casa es de: {atencionEnCasa}")
+
+
+# Busqueda 5 número de personas que se encuentran recuperados
+#numeroRecuperados = len(data.loc[data['Recuperado'] == 'Recuperado'])
+#print(f"El número de personas que se han recuperado es de: {numeroRecuperados}")
+
+#  Busqueda 6 número de personas que han fallecido
+#numeroFallecidos = len(data.loc[data['Recuperado'] == 'Fallecido'])
+#print(f"El número de personas que han fallecido es de: {numeroFallecidos}")
+
