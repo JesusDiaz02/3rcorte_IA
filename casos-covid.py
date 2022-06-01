@@ -39,6 +39,7 @@ data.loc[data['Ubicación del caso'] == 'CASA'] = 'Casa'
 data.loc[data['Recuperado'] == 'fallecido'] = 'Fallecido'
 
 
+
 #print(data.columns)
 
 # Busqueda 1 número de casos de contagios en el país
@@ -87,7 +88,41 @@ data.loc[data['Recuperado'] == 'fallecido'] = 'Fallecido'
 #print(ordenarTipoAtencion)
 
 
-# Busqueda 11 Listar de mayor a menor los 10 departamentos con más casos de contagios
+# Busqueda 11 listar de mayor a menor los 10 departamentos con más casos de contagios
 #top10 = data['Nombre departamento'].value_counts().head(10)
 #print(top10)
 
+# Busqueda 12 listar de mayor a menor los 10 departamentos con más fallecidos
+#aux = data.loc[data['Recuperado'] == 'Fallecido']
+#top10D-2 = aux['Nombre departamento'].value_counts().head(10)
+#print(top10-2)
+
+
+# Busqueda 13 listar de mayor a menor los 10 departamentos con más recuperados
+#aux = data.loc[data['Recuperado'] == 'Recuperado']
+#top10-3 = aux['Nombre departamento'].value_counts().head(10)
+#print(top10-3)
+
+# Busqueda 14 listar de mayor a menor los 10 municipios con más casos de contagios
+#top10-4 = data['Nombre de municipio'].value_counts().head(10)
+#print(top10-4)
+
+
+# Busqeuda 15 liste de mayor a menor los 10 municipios con mas casos de
+# fallecidos
+# aux = data.loc[data['Recuperado'] == 'Fallecido']
+# municipiosConMasMuertos = aux['Nombre municipio'].value_counts().head(10)
+# print(municipiosConMasMuertos)
+
+
+# busqueda 16 liste de mayor a menor los 10 municipios con mas casos de
+#recuperados
+#aux = data.loc[data['Recuperado'] == 'Recuperado']
+#municipiosConMasRecuperados = aux['Nombre municipio'].value_counts().head(10)
+#print(municipiosConMasRecuperados)
+
+
+# busqueda 17 liste agrupado por departamento y en orden de Mayor a menor las
+#ciudades con mas casos de contagiados
+#top10-5 = data.groupby(['Nombre departamento'])
+#print(top10-5['Nombre municipio'].value_counts())
