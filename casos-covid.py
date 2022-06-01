@@ -49,11 +49,11 @@ data.loc[data['Recuperado'] == 'fallecido'] = 'Fallecido'
 #NumeroMunicipiosAfectados = len(data['Nombre municipio'].value_counts())
 #print(f"El número de municipios afectados es de: {NumeroMunicipiosAfectados}")
 
-#  Busqueda 3 lista de los municipios afectados
+# Busqueda 3 lista de los municipios afectados
 #municipiosAfectados = set(data['Nombre municipio'])
 #print(municipiosAfectados)
 
-#  Busqueda 4 número de personas que se encuentran en atención en casa
+# Busqueda 4 número de personas que se encuentran en atención en casa
 #atencionEnCasa = len(data.loc[data['Ubicación del caso'] == 'Casa'])
 #print(f"El número de personas que están siendo atendida en su casa es de: {atencionEnCasa}")
 
@@ -62,7 +62,32 @@ data.loc[data['Recuperado'] == 'fallecido'] = 'Fallecido'
 #numeroRecuperados = len(data.loc[data['Recuperado'] == 'Recuperado'])
 #print(f"El número de personas que se han recuperado es de: {numeroRecuperados}")
 
-#  Busqueda 6 número de personas que han fallecido
+# Busqueda 6 número de personas que han fallecido
 #numeroFallecidos = len(data.loc[data['Recuperado'] == 'Fallecido'])
 #print(f"El número de personas que han fallecido es de: {numeroFallecidos}")
+
+
+
+# Busqueda 7 ordenar de Mayor a menor por tipo de caso (Importado, en estudio, Relacionado)
+#aux = data.loc[(data['Tipo de contagio'] == 'Importado') | (data['Tipo de contagio'] == 'Relacionado') | (data['Tipo de contagio'] == 'En estudio')]
+#tipoCasoContagio = aux['Tipo de contagio'].value_counts()
+#print(tipoCasoContagio)
+
+
+# Busqueda 8  número de departamentos afectados
+#numeroDepartamentosAfectados = len(data['Nombre departamento'].value_counts())
+#print(f"El número de departamentos afectados es de {numeroDepartamentosAfectados}")
+
+# Busqueda 9 lista de departamentos afectados
+#depatamentossAfectados = set(data['Nombre departamento'])
+#print(depatamentossAfectados)
+
+# Busqueda 10 Ordenar de mayor a menor por tipo de recuoperación (Tipo de atención no existe)
+#ordenarTipoAtencion = data['Tipo de recuperación'].value_counts()
+#print(ordenarTipoAtencion)
+
+
+# Busqueda 11 Listar de mayor a menor los 10 departamentos con más casos de contagios
+#top10 = data['Nombre departamento'].value_counts().head(10)
+#print(top10)
 
